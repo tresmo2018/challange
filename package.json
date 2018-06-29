@@ -1,0 +1,43 @@
+{
+  "name": "challange",
+  "version": "0.1.0",
+  "description": "tresmo code challange 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tresmo2018/challange.git"
+  },
+  "keywords": [
+    "node.js",
+    "MongoDB",
+    "REST"
+  ],
+  "author": "UFS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tresmo2018/challange/issues"
+  },
+  "homepage": "https://github.com/tresmo2018/challange#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-restify-mongoose": "^5.0.0",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.1.6",
+    "mongoose-sequence": "^4.0.1",
+    "restify": "^7.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  }
+}
