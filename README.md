@@ -62,7 +62,8 @@ app.listen(serverPort, serverHost, () => {
 - [ ] Pipline
 	- [ ] Dependecy check
 	- [ ] Code coverage
-	- [ ] Code dublicates
+	- [ ] Code duplicates
+	- [ ] Linting
 	- [ ] Depolyment
 	- [ ] Generate swagger
 - [ ] Reviese linting rules
