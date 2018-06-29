@@ -32,7 +32,7 @@ $ heroku create
 $ git push heroku master
 $ heroku open
 ```
-Create a database:
+## Create a database:
 ```
 $ heroku addons:create mongolab
 ```
@@ -42,6 +42,20 @@ $ heroku config:get MONGODB_URI
 ```
 
 To run it locally set the database environent variable and start with [localhost:3000](http://localhost:3000/).
+
+# Hints
+```
+Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+```
+Could be fixed by setting:
+```
+const serverPort = process.env.PORT || 3000;
+const serverHost = '0.0.0.0';
+...
+app.listen(serverPort, serverHost, () => {
+    console.log(`Server listening on: ${serverPort}`);
+});
+```
 
 # Possible improvements
 
@@ -55,7 +69,7 @@ To run it locally set the database environent variable and start with [localhost
 - [ ] Security
 - [ ] Rize test coverage
 - [ ] Securing routes
-- [ ] Add logging
+- [ ] Add logger
 
 # Helpful Links
 - [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
